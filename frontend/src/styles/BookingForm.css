@@ -1,0 +1,45 @@
+.booking-form-container {
+  padding: 40px 20px;
+}
+
+.booking-form-card {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.booking-form-card h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.booking-info {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #e8f5e9;
+}
+
+.booking-info h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.booking-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.booking-info ul li {
+  padding: 10px 0;
+  padding-left: 25px;
+  position: relative;
+  color: #555;
+}
+
+.booking-info ul li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4CAF50;
+  font-weight: bold;
+}

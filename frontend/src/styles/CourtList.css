@@ -1,0 +1,134 @@
+.court-list-container {
+  padding: 40px 20px;
+}
+
+.court-list-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.courts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.court-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  padding: 0;
+}
+
+.court-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.court-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.court-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.court-card:hover .court-image {
+  transform: scale(1.1);
+}
+
+.court-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(102, 126, 234, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.court-card:hover .court-overlay {
+  opacity: 1;
+}
+
+.court-overlay-text {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.court-content {
+  padding: 20px;
+}
+
+.court-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.court-header h3 {
+  color: #2c3e50;
+  font-size: 22px;
+  margin: 0;
+}
+
+.court-status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.court-status.disponible {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.court-status.no_disponible {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.court-details p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.court-description {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ecf0f1;
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+.no-courts {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #7f8c8d;
+}
