@@ -3,8 +3,7 @@
 USE acenet_db;
 
 -- Agregar la columna imagen_url si no existe
-ALTER TABLE pistas 
-ADD COLUMN imagen_url VARCHAR(500);
+ALTER TABLE pistas;
 
 -- Actualizar las pistas existentes con imágenes
 UPDATE pistas SET imagen_url = 'https://wpt-open500.com/wp-content/uploads/2022/08/Curiosidades-pista-padel-blog.jpg' WHERE id = 1;
