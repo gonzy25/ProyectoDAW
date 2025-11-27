@@ -85,7 +85,7 @@ function Register({ onLogin }) {
       
       <div className="register-card">
         <div className="register-header">
-          <h1>🎾 AceNet</h1>
+          <h1>AceNet</h1>
           <h2>Crear Cuenta</h2>
         </div>
         <form onSubmit={handleSubmit}>

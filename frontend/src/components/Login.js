@@ -74,7 +74,7 @@ function Login({ onLogin }) {
       
       <div className="login-card">
         <div className="login-header">
-          <h1>🎾 AceNet</h1>
+          <h1> AceNet</h1>
           <h2>Iniciar Sesión</h2>
         </div>
         <form onSubmit={handleSubmit}>
